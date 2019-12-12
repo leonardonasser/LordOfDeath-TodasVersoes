@@ -1,0 +1,3 @@
+﻿ Caso queira ver os codigos, abra o dev_portable e em seguida abre a pasta jogov0.9, assim você passará o arquivo chamado projeto1.dev, e pronto verá os codigos.
+
+Qualquer problema tem a biblioteca allegro(instalador), dentro da pasta jogov0.9, basta instalar e pronto.

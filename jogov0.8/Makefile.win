@@ -1,0 +1,33 @@
+# Project: Projeto1
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = Projeto1_private.res
+OBJ  = MeuJogo.o $(RES)
+LINKOBJ  = MeuJogo.o $(RES)
+LIBS =  -L"C:/Users/Leonardo/Desktop/Unicesumar/2ºSemestre/DevPortable_conio/App/devcpp/lib" -mwindows -lalleg 
+INCS =  -I"C:/Users/Leonardo/Desktop/Unicesumar/2ºSemestre/DevPortable_conio/App/devcpp/include" 
+CXXINCS =  -I"C:/Users/Leonardo/Desktop/Unicesumar/2ºSemestre/DevPortable_conio/App/devcpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Users/Leonardo/Desktop/Unicesumar/2ºSemestre/DevPortable_conio/App/devcpp/include/c++/3.4.2/backward"  -I"C:/Users/Leonardo/Desktop/Unicesumar/2ºSemestre/DevPortable_conio/App/devcpp/include/c++/3.4.2/mingw32"  -I"C:/Users/Leonardo/Desktop/Unicesumar/2ºSemestre/DevPortable_conio/App/devcpp/include/c++/3.4.2"  -I"C:/Users/Leonardo/Desktop/Unicesumar/2ºSemestre/DevPortable_conio/App/devcpp/include" 
+BIN  = Projeto1.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Projeto1.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Projeto1.exe" $(LIBS)
+
+MeuJogo.o: MeuJogo.cpp
+	$(CPP) -c MeuJogo.cpp -o MeuJogo.o $(CXXFLAGS)
+
+Projeto1_private.res: Projeto1_private.rc 
+	$(WINDRES) -i Projeto1_private.rc --input-format=rc -o Projeto1_private.res -O coff 

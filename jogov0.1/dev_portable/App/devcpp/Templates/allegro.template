@@ -1,0 +1,19 @@
+[Template]
+ver=1
+Name=Allegro application (DLL)
+Icon=allegro.ico
+Description=A dynamically linked Allegro application.
+Catagory=MultiMedia
+
+[Unit0]
+CName=main.c
+CppName=main.cpp
+C=allegro.txt
+Cpp=allegro.txt
+
+[Project]
+UnitCount=1
+Type=0
+Name=Allegro App
+Linker=-lalleg
+ProjectIcon=allegro.ico

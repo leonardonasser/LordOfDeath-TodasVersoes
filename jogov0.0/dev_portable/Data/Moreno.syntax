@@ -1,0 +1,20 @@
+[Editor.Custom]
+Assembler=clGreen, clNone, 0, 0, 0
+Character=clNone, clNone, 0, 0, 0
+Comment=$00003399, clNone, 0, 1, 0
+Float=clNone, clNone, 0, 0, 0
+Hexadecimal=clNone, clNone, 0, 0, 0
+Identifier=clBlue, clNone, 0, 0, 0
+Illegal Char=clNone, clNone, 0, 0, 0
+Number=clNone, clNone, 0, 0, 0
+Octal=clNone, clNone, 0, 0, 0
+Preprocessor=clNone, clNone, 0, 0, 0
+Reserved Word=clRed, clNone, 1, 0, 0
+Space=clWindow, clNone, 0, 0, 0
+String=clNone, clNone, 0, 0, 0
+Symbol=clNavy, clNone, 0, 0, 0
+Selected text=16777215, -2147483641
+Gutter=0, 10079487
+Break points=0, 52377
+Error Line=0, -2147483645
+Active Breakpoints=0, 65535

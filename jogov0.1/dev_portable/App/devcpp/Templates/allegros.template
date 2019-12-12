@@ -1,0 +1,21 @@
+[Template]
+ver=1
+Name=Allegro application (static)
+Icon=allegro.ico
+Description=A statically linked Allegro application.
+Catagory=MultiMedia
+
+[Unit0]
+CName=main.c
+CppName=main.cpp
+C=allegro.txt
+Cpp=allegro.txt
+
+[Project]
+UnitCount=1
+Type=0
+Name=Allegro App
+Linker=-lalleg_s -lkernel32 -luser32 -lgdi32 -lcomdlg32 -lole32 -ldinput -lddraw -ldxguid -lwinmm -ldsound
+Compiler=-DALLEGRO_STATICLINK
+CppCompiler=-DALLEGRO_STATICLINK
+ProjectIcon=allegro.ico
